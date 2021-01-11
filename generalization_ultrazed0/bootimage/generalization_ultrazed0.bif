@@ -1,0 +1,11 @@
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[fsbl_config]a53_x64
+	[bootloader]/home/ivan/diplomski/generalization_ultrazed_fsbl/Debug/generalization_ultrazed_fsbl.elf
+	[destination_device = pl]/home/ivan/diplomski/ultrazed_hw_platform/starter_kit_demo_design_wrapper.bit
+	[destination_cpu = a53-0, exception_level = el-3]/home/ivan/diplomski/generalization_ultrazed0/Debug/generalization_ultrazed0.elf
+	[destination_cpu = a53-1, exception_level = el-3]/home/ivan/diplomski/generalization_ultrazed1/Debug/generalization_ultrazed1.elf
+	[destination_cpu = a53-2, exception_level = el-3]/home/ivan/diplomski/generalization_ultrazed2/Debug/generalization_ultrazed2.elf
+	[destination_cpu = a53-3, exception_level = el-3]/home/ivan/diplomski/generalization_ultrazed3/Debug/generalization_ultrazed3.elf
+}
